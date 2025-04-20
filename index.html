@@ -2,103 +2,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tipzera - Transforme suas apostas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #00ff88;
-      padding: 2rem;
-      text-align: center;
-      color: #111;
-    }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    .planos {
-      background-color: #222;
-      border: 1px solid #333;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: #aaa;
-    }
-    .cta {
-      display: inline-block;
-      margin: 1rem 0;
-      padding: 1rem 2rem;
-      background-color: #00ff88;
-      color: #111;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipzera</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #00ff88;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #00ff88, #0077ff);
+            color: #000;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .hero button {
+            background-color: #000;
+            color: #00ff88;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .planos, .depoimentos, footer {
+            padding: 2rem;
+        }
+        .card {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        .depoimentos blockquote {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .btn {
+            background-color: #00ff88;
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Tipzera</h1>
-    <p>Transforme suas apostas em lucro com IA e traders experientes</p>
-  </header>
-  <main>
-    <section>
-      <h2>O que é a Tipzera?</h2>
-      <p>Receba tips completas e diárias baseadas em inteligência artificial + especialistas reais. Sem achismo. Sem enrolação.</p>
+    <header>
+        <h1>Tipzera</h1>
+        <nav>
+            <a href="#planos">Planos</a>
+            <a href="#depoimentos">Depoimentos</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Transforme suas apostas com inteligência</h2>
+        <p>Receba dicas validadas por IA e especialistas todo dia.</p>
+        <a href="#planos"><button>Ver Planos</button></a>
     </section>
 
-    <section>
-      <h2>Planos</h2>
-      <div class="planos">
-        <h3>🟢 Tip de Leve - R$ 29,90/mês</h3>
-        <ul>
-          <li>Tips completas diárias</li>
-          <li>Entrega por e-mail ou canal público</li>
-          <li>Histórico semanal</li>
-          <li>Suporte por e-mail</li>
-        </ul>
-      </div>
-      <div class="planos">
-        <h3>🔵 Tipzera PRO - R$ 59,90/mês</h3>
-        <ul>
-          <li>Tudo do plano Tip de Leve</li>
-          <li>Conteúdo de aprendizado (trading, leitura de jogo)</li>
-          <li>Gráficos e indicadores exclusivos</li>
-          <li>Encontros com especialistas</li>
-          <li>Canal VIP para dúvidas</li>
-        </ul>
-      </div>
+    <section id="planos" class="planos">
+        <h2>Planos</h2>
+        <div class="card">
+            <h3>🟢 Tip de Leve - R$ 29,90/mês</h3>
+            <ul>
+                <li>Dicas completas diárias</li>
+                <li>Entrega por e-mail ou canal público</li>
+                <li>Histórico semanal</li>
+                <li>Suporte por e-mail</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>🔵 Tipzera PRO - R$ 59,90/mês</h3>
+            <ul>
+                <li>Tudo do plano Tip de Leve</li>
+                <li>Conteúdo de aprendizado (trading, leitura de jogo)</li>
+                <li>Gráficos e indicadores exclusivos</li>
+                <li>Encontros com especialistas</li>
+                <li>Canal VIP para dúvidas</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-      <h2>Depoimentos</h2>
-      <p>“Nunca mais entrei em jogo no escuro. A Tipzera virou meu GPS nas apostas.” — Felipe R.</p>
-      <p>“A IA manda bem demais. O conteúdo PRO é outro nível.” — Juliana S.</p>
+    <section id="depoimentos" class="depoimentos">
+        <h2>Depoimentos</h2>
+        <blockquote>"Nunca mais entrei em jogo no escuro. A Tipzera virou meu GPS nas apostas." — Felipe R.</blockquote>
+        <blockquote>"A IA manda bem demais. O conteúdo PRO é outro nível." — Juliana S.</blockquote>
+        <div class="btn-group">
+            <a class="btn" href="https://buy.stripe.com/test_cN25n3bYe3lA1P24gg">Assinar Agora</a>
+            <a class="btn" href="#planos">Ver Planos</a>
+        </div>
     </section>
 
-    <section style="text-align:center;">
-      <a href="#" class="cta">Assinar Agora</a>
-      <a href="#" class="cta">Ver Planos</a>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Tipzera. Todos os direitos reservados.</p>
-  </footer>
+    <footer>
+        © 2025 Tipzera — Todos os direitos reservados.
+    </footer>
 </body>
 </html>
